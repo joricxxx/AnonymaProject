@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AnonymaClassLibrary.StaticClass;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -26,9 +27,20 @@ namespace AnonymaWindowsFormApp.AnonymaUserControl
 
         private void uploadButton_Click(object sender, EventArgs e)
         {
+            if (IntenetConnectionChecker.IsConnectedToInternet())
+            {
+                string Key = KeyGenerator.GenerateKey();
+                AnonymaClassLibrary.Model.Message message = new AnonymaClassLibrary.Model.Message(messageRTextbox.Text);
+                DbConnector.uploadMessage(Key, message);
 
-            Parent.Controls.Add(new KeyResult());
-            Parent.Controls.RemoveAt(0);
+                KeyResult form = new KeyResult();
+                form.editKeyPlaceholder(Key);
+
+                Parent.Controls.Add(form);
+                Parent.Controls.RemoveAt(0);
+            }
+            else
+                MessageBox.Show("You have no internet connection! Connect to internet to proceed");
         }
     }
 }
