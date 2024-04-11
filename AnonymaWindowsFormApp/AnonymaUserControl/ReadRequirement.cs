@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AnonymaClassLibrary.StaticClass;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,8 +26,24 @@ namespace AnonymaWindowsFormApp.AnonymaUserControl
 
         private void enterButton_Click(object sender, EventArgs e)
         {
-            Parent.Controls.Add(new MessageDisplayer());
-            Parent.Controls.RemoveAt(0);
+            if (IntenetConnectionChecker.IsConnectedToInternet())
+            {
+                if (DbConnector.KeyIsValid(keyTextbox.Text) == true)
+                {
+                    string content = DbConnector.retrieveContent(keyTextbox.Text);
+                    MessageDisplayer messageDisplay = new MessageDisplayer();
+                    messageDisplay.setupMessageContent(keyTextbox.Text, content);
+
+                    Parent.Controls.Add(messageDisplay);
+                    Parent.Controls.RemoveAt(0);
+                }
+                else
+                    MessageBox.Show("Invalid Key or might be the Message was already seen by others before you");
+            }
+            else
+            {
+                MessageBox.Show("You have no internet connection! Connect to internet to proceed");
+            }
         }
     }
 }
