@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AnonymaClassLibrary.StaticClass;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace AnonymaWindowsFormApp.AnonymaUserControl
 {
     public partial class MessageDisplayer : UserControl
     {
+        private string Key;
         public MessageDisplayer()
         {
             InitializeComponent();
@@ -19,8 +21,15 @@ namespace AnonymaWindowsFormApp.AnonymaUserControl
 
         private void exitButton_Click(object sender, EventArgs e)
         {
+
+            DbConnector.deleteContent(Key);
             Parent.Controls.Add(new RoleSelection());
             Parent.Controls.RemoveAt(0);
+        }
+        public void setupMessageContent(string key, string content)
+        {
+            messageContent.Text = content;
+            Key = key;
         }
     }
 }
