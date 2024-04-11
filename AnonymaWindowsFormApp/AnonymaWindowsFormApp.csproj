@@ -46,6 +46,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnonymaUserControl\KeyResult.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AnonymaUserControl\KeyResult.Designer.cs">
+      <DependentUpon>KeyResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnonymaUserControl\MessageComposer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AnonymaUserControl\MessageComposer.Designer.cs">
+      <DependentUpon>MessageComposer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnonymaUserControl\MessageDisplayer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AnonymaUserControl\MessageDisplayer.Designer.cs">
+      <DependentUpon>MessageDisplayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnonymaUserControl\ReadRequirement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AnonymaUserControl\ReadRequirement.Designer.cs">
+      <DependentUpon>ReadRequirement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnonymaUserControl\RoleSelection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AnonymaUserControl\RoleSelection.Designer.cs">
+      <DependentUpon>RoleSelection.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="ProjectAnonyma.cs">
       <SubType>Form</SubType>
@@ -54,6 +84,21 @@
       <DependentUpon>ProjectAnonyma.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AnonymaUserControl\KeyResult.resx">
+      <DependentUpon>KeyResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnonymaUserControl\MessageComposer.resx">
+      <DependentUpon>MessageComposer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnonymaUserControl\MessageDisplayer.resx">
+      <DependentUpon>MessageDisplayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnonymaUserControl\ReadRequirement.resx">
+      <DependentUpon>ReadRequirement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnonymaUserControl\RoleSelection.resx">
+      <DependentUpon>RoleSelection.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ProjectAnonyma.resx">
       <DependentUpon>ProjectAnonyma.cs</DependentUpon>
     </EmbeddedResource>
@@ -65,6 +110,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -78,6 +124,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enter_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\getkey_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\okay_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\read_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upload_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\write_button.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
