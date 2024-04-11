@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProjectAnonyma));
             this.mainPanel = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
@@ -47,11 +48,12 @@
             this.Controls.Add(this.mainPanel);
             this.Font = new System.Drawing.Font("Ebrima", 12F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.Name = "ProjectAnonyma";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ProjectAnonyma";
+            this.Text = "Project Anonyma";
             this.ResumeLayout(false);
 
         }
