@@ -60,5 +60,13 @@ namespace AnonymaClassLibrary.StaticClass
             }
             return "null";
         }
+        public static void deleteContent(string key)
+        {
+            string path = $"SecretMessages/{key}";
+            if (KeyIsValid(key))
+            {
+                FirebaseResponse response = client.Delete(path);
+            }
+        }
     }
 }
