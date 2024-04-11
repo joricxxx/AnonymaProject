@@ -56,6 +56,7 @@
     <Compile Include="Model\Message.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StaticClass\DbConnector.cs" />
+    <Compile Include="StaticClass\IntenetConnectionChecker.cs" />
     <Compile Include="StaticClass\KeyGenerator.cs" />
   </ItemGroup>
   <ItemGroup>
