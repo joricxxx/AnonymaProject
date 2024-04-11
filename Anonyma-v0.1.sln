@@ -5,6 +5,8 @@ VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnonymaClassLibrary", "AnonymaClassLibrary\AnonymaClassLibrary.csproj", "{A2C6C8BA-7376-4415-B649-1E7FEC8D0C01}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnonymaWindowsFormApp", "AnonymaWindowsFormApp\AnonymaWindowsFormApp.csproj", "{63DCF41B-C9DA-4BDD-8B78-A74BB510FBAA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{A2C6C8BA-7376-4415-B649-1E7FEC8D0C01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2C6C8BA-7376-4415-B649-1E7FEC8D0C01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2C6C8BA-7376-4415-B649-1E7FEC8D0C01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63DCF41B-C9DA-4BDD-8B78-A74BB510FBAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63DCF41B-C9DA-4BDD-8B78-A74BB510FBAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63DCF41B-C9DA-4BDD-8B78-A74BB510FBAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63DCF41B-C9DA-4BDD-8B78-A74BB510FBAA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
