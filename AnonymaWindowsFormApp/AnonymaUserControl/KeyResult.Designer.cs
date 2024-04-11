@@ -54,6 +54,7 @@
             this.copyButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.copyButton.TabIndex = 5;
             this.copyButton.TabStop = false;
+            this.copyButton.Click += new System.EventHandler(this.copyButton_Click);
             // 
             // KeyResult
             // 

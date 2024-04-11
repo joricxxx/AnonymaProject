@@ -57,6 +57,7 @@
             this.trashButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.trashButton.TabIndex = 5;
             this.trashButton.TabStop = false;
+            this.trashButton.Click += new System.EventHandler(this.trashButton_Click);
             // 
             // uploadButton
             // 
@@ -68,6 +69,7 @@
             this.uploadButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.uploadButton.TabIndex = 4;
             this.uploadButton.TabStop = false;
+            this.uploadButton.Click += new System.EventHandler(this.uploadButton_Click);
             // 
             // MessageComposer
             // 

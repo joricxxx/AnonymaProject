@@ -87,6 +87,7 @@
             this.writeButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.writeButton.TabIndex = 15;
             this.writeButton.TabStop = false;
+            this.writeButton.Click += new System.EventHandler(this.writeButton_Click);
             // 
             // readButton
             // 
@@ -98,6 +99,7 @@
             this.readButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.readButton.TabIndex = 14;
             this.readButton.TabStop = false;
+            this.readButton.Click += new System.EventHandler(this.readButton_Click);
             // 
             // RoleSelection
             // 

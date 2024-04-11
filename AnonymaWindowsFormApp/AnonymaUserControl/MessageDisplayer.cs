@@ -16,5 +16,11 @@ namespace AnonymaWindowsFormApp.AnonymaUserControl
         {
             InitializeComponent();
         }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            Parent.Controls.Add(new RoleSelection());
+            Parent.Controls.RemoveAt(0);
+        }
     }
 }

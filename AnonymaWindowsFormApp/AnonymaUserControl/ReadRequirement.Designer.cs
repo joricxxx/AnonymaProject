@@ -77,6 +77,7 @@
             this.cancelButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.cancelButton.TabIndex = 14;
             this.cancelButton.TabStop = false;
+            this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
             // 
             // enterButton
             // 
@@ -88,6 +89,7 @@
             this.enterButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.enterButton.TabIndex = 13;
             this.enterButton.TabStop = false;
+            this.enterButton.Click += new System.EventHandler(this.enterButton_Click);
             // 
             // ReadRequirement
             // 

@@ -43,6 +43,7 @@
             this.exitButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.exitButton.TabIndex = 3;
             this.exitButton.TabStop = false;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
             // messageContent
             // 

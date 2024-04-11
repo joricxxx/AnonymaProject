@@ -16,5 +16,19 @@ namespace AnonymaWindowsFormApp.AnonymaUserControl
         {
             InitializeComponent();
         }
+
+        private void trashButton_Click(object sender, EventArgs e)
+        {
+
+            Parent.Controls.Add(new RoleSelection());
+            Parent.Controls.RemoveAt(0);
+        }
+
+        private void uploadButton_Click(object sender, EventArgs e)
+        {
+
+            Parent.Controls.Add(new KeyResult());
+            Parent.Controls.RemoveAt(0);
+        }
     }
 }
