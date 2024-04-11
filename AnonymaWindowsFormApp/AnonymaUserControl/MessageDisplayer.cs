@@ -13,8 +13,6 @@ namespace AnonymaWindowsFormApp.AnonymaUserControl
 {
     public partial class MessageDisplayer : UserControl
     {
-        //TODO : If this form is displayed and a user will click the close button, it must also delete the content.
-        private string Key;
         public MessageDisplayer()
         {
             InitializeComponent();
@@ -22,15 +20,12 @@ namespace AnonymaWindowsFormApp.AnonymaUserControl
 
         private void exitButton_Click(object sender, EventArgs e)
         {
-
-            DbConnector.deleteContent(Key);
             Parent.Controls.Add(new RoleSelection());
             Parent.Controls.RemoveAt(0);
         }
-        public void setupMessageContent(string key, string content)
+        public void setupMessageContent(string content)
         {
             messageContent.Text = content;
-            Key = key;
         }
     }
 }

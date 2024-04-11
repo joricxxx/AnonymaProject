@@ -32,7 +32,8 @@ namespace AnonymaWindowsFormApp.AnonymaUserControl
                 {
                     string content = DbConnector.retrieveContent(keyTextbox.Text);
                     MessageDisplayer messageDisplay = new MessageDisplayer();
-                    messageDisplay.setupMessageContent(keyTextbox.Text, content);
+                    messageDisplay.setupMessageContent(content);
+                    DbConnector.deleteContent(keyTextbox.Text);
 
                     Parent.Controls.Add(messageDisplay);
                     Parent.Controls.RemoveAt(0);
