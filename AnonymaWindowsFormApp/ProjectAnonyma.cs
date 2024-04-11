@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AnonymaWindowsFormApp.AnonymaUserControl;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,7 @@ namespace AnonymaWindowsFormApp
         public ProjectAnonyma()
         {
             InitializeComponent();
+            mainPanel.Controls.Add(new RoleSelection());
         }
     }
 }

@@ -13,6 +13,7 @@ namespace AnonymaWindowsFormApp.AnonymaUserControl
 {
     public partial class MessageDisplayer : UserControl
     {
+        //TODO : If this form is displayed and a user will click the close button, it must also delete the content.
         private string Key;
         public MessageDisplayer()
         {

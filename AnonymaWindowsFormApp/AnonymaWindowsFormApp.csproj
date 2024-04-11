@@ -155,5 +155,11 @@
   <ItemGroup>
     <None Include="Resources\write_button.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AnonymaClassLibrary\AnonymaClassLibrary.csproj">
+      <Project>{A2C6C8BA-7376-4415-B649-1E7FEC8D0C01}</Project>
+      <Name>AnonymaClassLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
