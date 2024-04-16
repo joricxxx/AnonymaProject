@@ -20,7 +20,6 @@ namespace AnonymaWindowsFormApp.AnonymaUserControl
 
         private void trashButton_Click(object sender, EventArgs e)
         {
-
             Parent.Controls.Add(new RoleSelection());
             Parent.Controls.RemoveAt(0);
         }
@@ -41,6 +40,11 @@ namespace AnonymaWindowsFormApp.AnonymaUserControl
             }
             else
                 MessageBox.Show("You have no internet connection! Connect to internet to proceed");
+        }
+
+        private void messageRTextbox_Click(object sender, EventArgs e)
+        {
+            messageRTextbox.Text = "";
         }
     }
 }

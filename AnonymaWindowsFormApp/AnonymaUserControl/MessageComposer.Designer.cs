@@ -46,6 +46,7 @@
             this.messageRTextbox.Size = new System.Drawing.Size(568, 466);
             this.messageRTextbox.TabIndex = 3;
             this.messageRTextbox.Text = " Write Here. . .";
+            this.messageRTextbox.Click += new System.EventHandler(this.messageRTextbox_Click);
             // 
             // trashButton
             // 
