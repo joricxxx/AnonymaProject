@@ -1,6 +1,6 @@
 #   Anonyma v.0.1
 
-![This is an alt text.](https://raw.githubusercontent.com/joricxxx/AnonymaProject/master/AnonymaWindowsFormApp/Resources/anonyma-logo.png?token=GHSAT0AAAAAACQNVWMR5QIQJ6JCL2WXYJDKZRF3APA)
+![Anonyma-Logo]([https://raw.githubusercontent.com/joricxxx/AnonymaProject/master/AnonymaWindowsFormApp/Resources/anonyma-logo.png?token=GHSAT0AAAAAACQNVWMR5QIQJ6JCL2WXYJDKZRF3APA](https://github.com/joricxxx/AnonymaProject/blob/master/AnonymaWindowsFormApp/Resources/anonyma-logo.png))
 
 This app provides a cryptography like functions in sending messages online 
 # Purpose of the App
