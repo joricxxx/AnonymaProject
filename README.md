@@ -12,6 +12,6 @@ After reading the message, it will automatically delete the message to guarantee
  
  Well, this app will kinda solve the problem!
  
- This app was inspired by **Confide** but again, it doesnt need you to create an account.
-Watch what Confide does here ->
+ It has the same purpose of  **Confide**.
+Watch what Confide does : 
 [https://www.youtube.com/watch?v=EhrW1JDKLcw](https://www.youtube.com/watch?v=EhrW1JDKLcw)
