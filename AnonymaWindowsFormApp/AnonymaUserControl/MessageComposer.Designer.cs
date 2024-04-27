@@ -41,12 +41,12 @@
             this.messageRTextbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.messageRTextbox.Font = new System.Drawing.Font("Ebrima", 12F);
             this.messageRTextbox.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.messageRTextbox.HideSelection = false;
             this.messageRTextbox.Location = new System.Drawing.Point(15, 34);
             this.messageRTextbox.Name = "messageRTextbox";
             this.messageRTextbox.Size = new System.Drawing.Size(568, 466);
             this.messageRTextbox.TabIndex = 3;
-            this.messageRTextbox.Text = " Write Here. . .";
-            this.messageRTextbox.Click += new System.EventHandler(this.messageRTextbox_Click);
+            this.messageRTextbox.Text = "";
             // 
             // trashButton
             // 
