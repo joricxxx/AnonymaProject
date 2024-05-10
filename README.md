@@ -11,7 +11,3 @@ After reading the message, it will automatically delete the message to guarantee
  Have you ever experienced when your conversation with someone has been leaked out? Or, have you wonder if the person you're currently chatting is, was realy the one who currently used the account?
  
  Well, this app will kinda solve the problem!
- 
- It has the same purpose of  **Confide**.
-Watch what Confide does : 
-[https://www.youtube.com/watch?v=EhrW1JDKLcw](https://www.youtube.com/watch?v=EhrW1JDKLcw)
